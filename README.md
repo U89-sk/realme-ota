@@ -17,6 +17,22 @@ Invoke-WebRequest https://cdn.r0rt1z2.com/realme-ota/Install.ps1 | Invoke-Expres
 ### Linux
 ```bash
 sudo apt install python3-pip
+```
+```bash
+pip3 install --upgrade git+https://github.com/R0rt1z2/realme-ota
+```
+
+## Installation On Termux
+```bash
+apt update && apt upgrade -y
+```
+```bash
+apt install git python
+```
+```bash
+python3 -m pip install --upgrade pip
+```
+```bash
 pip3 install --upgrade git+https://github.com/R0rt1z2/realme-ota
 ```
 
@@ -55,6 +71,43 @@ request options:
 output options:
   -d DUMP, --dump DUMP  Save request response into a file.
   -o ONLY, --only ONLY  Only show the desired value from the response.
+```
+
+## Extra Explanation
+```bash
+Find usage:
+realme-ota --help
+```
+```bash
+Get build.prop values:
+getprop ro.product.name
+getprop ro.build.version.ota
+getprop ro.build.version.realmeui
+getprop ro.build.oplus_nv_id
+```
+```bash
+Examples:
+# Realme 8 Pro (RMX3081)
+realme-ota -r 2 -d /sdcard/out.txt RMX3081 RMX3081NV87_11.A.41_1410_202108181828 2 0
+```
+```bash
+# Realme 3 Pro (RMX1851)
+realme-ota -r 2 -d out.txt RMX1851 RMX1851EXNV1B_11.F.05_1050_202109230624 2 00011011
+
+Help to Understand:
+
+Command = realme-ota
+
+--region = 2              [India]
+--dump = out.txt          [directory]
+
+product_model = RMX1851   [Device: codename]
+
+ota_version = RMX1851EXNV1B_11.F.05_1050_202109230624  
+
+realmeUI_Version = 2      [Realme UI 2 (Android 11).]
+
+nv_identifier/nv_carrier = 00011011
 ```
 
 ## Additional notes
