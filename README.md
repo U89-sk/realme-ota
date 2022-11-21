@@ -94,6 +94,7 @@ realme-ota -r 2 -d /sdcard/out.txt RMX3301 RMX3301_11.C.01_0000_000000000000 3 0
 # Realme 9 Pro 5G (RMX3471)
 realme-ota -r 2 -d /sdcard/out.txt RMX3471 RMX3471_11.C.01_0000_000000000000 3 0
 ```
+```bash
 # Realme 8 Pro (RMX3081)
 realme-ota -r 2 -d /sdcard/out.txt RMX3081 RMX3081NV87_11.A.41_1410_202108181828 2 0
 ```
