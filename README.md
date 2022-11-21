@@ -91,11 +91,12 @@ Examples:
 realme-ota -r 2 -d /sdcard/out.txt RMX3081 RMX3081NV87_11.A.41_1410_202108181828 2 0
 ```
 ```bash
-# Realme 3 Pro (RMX1851)
-realme-ota -r 2 -d out.txt RMX1851 RMX1851EXNV1B_11.F.05_1050_202109230624 2 00011011
-
 # Realme 9 Pro 5G (RMX3471)
 realme-ota -r 2 -d /sdcard/ota.txt RMX3471 RMX3471_11.C.01_0000_000000000000 3 0
+```
+```bash
+# Realme 3 Pro (RMX1851)
+realme-ota -r 2 -d out.txt RMX1851 RMX1851EXNV1B_11.F.05_1050_202109230624 2 00011011
 
 Help to Understand:
 
