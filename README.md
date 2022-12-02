@@ -85,20 +85,6 @@ getprop ro.build.version.ota
 getprop ro.build.version.realmeui
 getprop ro.build.oplus_nv_id
 ```
-```bash
-Examples:
-# Realme GT 2 Pro (RMX3301)
-realme-ota -r 2 -d /sdcard/out.txt RMX3301 RMX3301_11.C.01_0000_000000000000 3 0
-```
-```bash
-# Realme 9 Pro 5G (RMX3471)
-realme-ota -r 2 -d /sdcard/out.txt RMX3471 RMX3471_11.C.01_0000_000000000000 3 0
-```
-```bash
-# Realme 8 Pro (RMX3081)
-realme-ota -r 2 -d /sdcard/out.txt RMX3081 RMX3081NV87_11.A.41_1410_202108181828 2 0
-```
-
 
 ```bash
 # Realme 3 Pro (RMX1851)
@@ -124,6 +110,45 @@ nv_identifier/nv_carrier = 00011011
 * If your request returns `flow limit` or status code `500`, try to wait a few minutes and then request again.
 * Since Android 11 (RUI2), Realme started using components, which means you won't be able to get a full OTA link.
 * The `--beta` option might not work correctly, it has not been fully tested!
+
+#### RealmeUI 4.0
+```bash
+Examples:
+## Realme GT Neo 2 (RMX3370)
+realme-ota -r 2 -d /sdcard/out.txt RMX3370 RMX3370_11.F.01_0000_000000000000 4 0
+```
+```bash
+## Realme 9 Pro 5G (RMX3471) Beta Update
+realme-ota -r 2 -d /sdcard/out.txt RMX3471 RMX3471_11.C.01_0000_000000000000 4 0
+```
+
+#### RealmeUI 3.0
+```bash
+Examples:
+## Realme GT 2 Pro (RMX3301)
+realme-ota -r 2 -d /sdcard/out.txt RMX3301 RMX3301_11.C.01_0000_000000000000 3 0
+```
+```bash
+## Realme 9 Pro 5G (RMX3471)
+realme-ota -r 2 -d /sdcard/out.txt RMX3471 RMX3471_11.A.01_0000_000000000000 3 0
+```
+```bash
+## Realme 8 Pro (RMX3081)
+realme-ota -r 2 -d /sdcard/out.txt RMX3081 RMX3081_11.C.01_0000_000000000000 3 0
+```
+
+#### RealmeUI 2.0
+```bash
+## Realme 8 Pro (RMX3081)
+realme-ota -r 2 -d /sdcard/out.txt RMX3081 RMX3081NV87_11.A.41_1410_202108181828 2 0
+```
+
+#### RealmeUI 1.0
+
+```bash
+## Realme 3 Pro (RMX1851)
+realme-ota -r 0 -d /sdcard/out.txt RMX1851 RMX1851EX_11.C.01_0000_000000000000 1 0
+```
 
 ## License
 * This tool is licensed under the GNU (v3) General Public License. See `LICENSE` for more details.
